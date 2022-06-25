@@ -1,0 +1,418 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_PMOS_DSG Q?
+U 1 1 62B3628F
+P 3100 3250
+F 0 "Q?" V 3442 3250 50  0000 C CNN
+F 1 "Q_PMOS_DSG" V 3351 3250 50  0000 C CNN
+F 2 "" H 3300 3350 50  0001 C CNN
+F 3 "~" H 3100 3250 50  0001 C CNN
+	1    3100 3250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Driver_FET:MCP1415 U?
+U 1 1 62B37458
+P 3650 4000
+F 0 "U?" H 4050 3750 50  0000 R CNN
+F 1 "MCP1415" H 4050 3650 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3650 3400 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002092F.pdf" H 3450 4250 50  0001 C CNN
+	1    3650 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 62B3851F
+P 4900 3150
+F 0 "L?" V 5090 3150 50  0000 C CNN
+F 1 "L" V 4999 3150 50  0000 C CNN
+F 2 "" H 4900 3150 50  0001 C CNN
+F 3 "~" H 4900 3150 50  0001 C CNN
+	1    4900 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 62B39257
+P 4450 4200
+F 0 "D?" V 4600 4250 50  0000 L CNN
+F 1 "D_Schottky" V 4700 4250 50  0000 L CNN
+F 2 "" H 4450 4200 50  0001 C CNN
+F 3 "~" H 4450 4200 50  0001 C CNN
+	1    4450 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3150 4450 3150
+Wire Wire Line
+	4450 4050 4450 3150
+Connection ~ 4450 3150
+Wire Wire Line
+	4450 3150 4750 3150
+$Comp
+L Device:CP C?
+U 1 1 62B3A5A9
+P 5850 4250
+F 0 "C?" H 5968 4296 50  0000 L CNN
+F 1 "CP" H 5968 4205 50  0000 L CNN
+F 2 "" H 5888 4100 50  0001 C CNN
+F 3 "~" H 5850 4250 50  0001 C CNN
+	1    5850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3150 5400 3150
+Wire Wire Line
+	5850 3150 5850 4100
+Wire Wire Line
+	5850 5300 5850 4400
+Wire Wire Line
+	4450 4350 4450 5300
+Connection ~ 4450 5300
+Wire Wire Line
+	4450 5300 5400 5300
+Wire Wire Line
+	3100 3450 3100 4000
+Wire Wire Line
+	3100 4000 3250 4000
+$Comp
+L Device:R R?
+U 1 1 62B3B3F8
+P 3900 3600
+F 0 "R?" V 4107 3600 50  0000 C CNN
+F 1 "R" V 4016 3600 50  0000 C CNN
+F 2 "" V 3830 3600 50  0001 C CNN
+F 3 "~" H 3900 3600 50  0001 C CNN
+	1    3900 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 3150 2700 3150
+$Comp
+L Device:CP C?
+U 1 1 62B3C57B
+P 2250 4250
+F 0 "C?" H 2368 4296 50  0000 L CNN
+F 1 "CP" H 2368 4205 50  0000 L CNN
+F 2 "" H 2288 4100 50  0001 C CNN
+F 3 "~" H 2250 4250 50  0001 C CNN
+	1    2250 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3150 2250 4100
+Connection ~ 2250 3150
+Wire Wire Line
+	2250 4400 2250 5300
+Connection ~ 2250 5300
+Wire Wire Line
+	2250 5300 3650 5300
+Wire Wire Line
+	3650 4300 3650 5300
+Connection ~ 3650 5300
+Wire Wire Line
+	3650 5300 4450 5300
+Wire Wire Line
+	3750 3600 3650 3600
+Wire Wire Line
+	2700 3600 2700 3150
+Connection ~ 2700 3150
+Wire Wire Line
+	2700 3150 2250 3150
+Wire Wire Line
+	3650 3600 3650 3700
+Connection ~ 3650 3600
+Wire Wire Line
+	3650 3600 2700 3600
+$Comp
+L Comparator:ADCMP350 U?
+U 1 1 62B3DC4C
+P 5050 4000
+F 0 "U?" H 5300 3800 50  0000 R CNN
+F 1 "ADCMP350" H 5500 3700 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:Analog_KS-4" H 5050 3600 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP350_354_356.pdf" H 5200 4200 50  0001 C CNN
+	1    5050 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Comparator:ADCMP350 U?
+U 1 1 62B3FFCB
+P 5050 4850
+F 0 "U?" H 5300 4650 50  0000 R CNN
+F 1 "ADCMP350" H 5500 4550 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:Analog_KS-4" H 5050 4450 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP350_354_356.pdf" H 5200 5050 50  0001 C CNN
+	1    5050 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62B41B26
+P 5400 3650
+F 0 "R?" H 5470 3696 50  0000 L CNN
+F 1 "13k4" H 5470 3605 50  0000 L CNN
+F 2 "" V 5330 3650 50  0001 C CNN
+F 3 "~" H 5400 3650 50  0001 C CNN
+	1    5400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3150 5400 3500
+Connection ~ 5400 3150
+Wire Wire Line
+	5400 3150 5850 3150
+$Comp
+L Device:R R?
+U 1 1 62B42352
+P 5400 4500
+F 0 "R?" H 5470 4546 50  0000 L CNN
+F 1 "400" H 5470 4455 50  0000 L CNN
+F 2 "" V 5330 4500 50  0001 C CNN
+F 3 "~" H 5400 4500 50  0001 C CNN
+	1    5400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3800 5400 4000
+Wire Wire Line
+	5250 4000 5400 4000
+Connection ~ 5400 4000
+Wire Wire Line
+	5400 4000 5400 4350
+Wire Wire Line
+	5400 4650 5400 5300
+Connection ~ 5400 5300
+Wire Wire Line
+	5400 5300 5850 5300
+Wire Wire Line
+	3950 4000 4200 4000
+Wire Wire Line
+	4050 3600 4200 3600
+Wire Wire Line
+	4200 3600 4200 4000
+Connection ~ 4200 4000
+Wire Wire Line
+	4200 4000 4550 4000
+$Comp
+L Device:R R?
+U 1 1 62B449EE
+P 6700 3150
+F 0 "R?" V 6493 3150 50  0000 C CNN
+F 1 "0.1" V 6584 3150 50  0000 C CNN
+F 2 "" V 6630 3150 50  0001 C CNN
+F 3 "~" H 6700 3150 50  0001 C CNN
+	1    6700 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62B451E2
+P 6450 3650
+F 0 "R?" H 6520 3696 50  0000 L CNN
+F 1 "40k" H 6520 3605 50  0000 L CNN
+F 2 "" V 6380 3650 50  0001 C CNN
+F 3 "~" H 6450 3650 50  0001 C CNN
+	1    6450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62B45754
+P 6950 3650
+F 0 "R?" H 7020 3696 50  0000 L CNN
+F 1 "40k" H 7020 3605 50  0000 L CNN
+F 2 "" V 6880 3650 50  0001 C CNN
+F 3 "~" H 6950 3650 50  0001 C CNN
+	1    6950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA196xD U?
+U 1 1 62B46170
+P 6700 4450
+F 0 "U?" V 6850 4400 50  0000 R CNN
+F 1 "OPA196xD" V 6950 4400 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6600 4250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa4196.pdf" H 6850 4600 50  0001 C CNN
+	1    6700 4450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5850 3150 6450 3150
+Wire Wire Line
+	6450 3150 6450 3500
+Connection ~ 6450 3150
+Wire Wire Line
+	6450 3150 6550 3150
+Wire Wire Line
+	6850 3150 6950 3150
+Wire Wire Line
+	6950 3150 6950 3500
+Connection ~ 6950 3150
+$Comp
+L Device:R R?
+U 1 1 62B4F0F4
+P 6200 4400
+F 0 "R?" H 6270 4446 50  0000 L CNN
+F 1 "10k" H 6270 4355 50  0000 L CNN
+F 2 "" V 6130 4400 50  0001 C CNN
+F 3 "~" H 6200 4400 50  0001 C CNN
+	1    6200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62B4F81F
+P 7200 4400
+F 0 "R?" H 7270 4446 50  0000 L CNN
+F 1 "10k" H 7270 4355 50  0000 L CNN
+F 2 "" V 7130 4400 50  0001 C CNN
+F 3 "~" H 7200 4400 50  0001 C CNN
+	1    7200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4150 6600 4050
+Wire Wire Line
+	6600 4050 6450 4050
+Wire Wire Line
+	6450 4050 6450 3800
+Wire Wire Line
+	6450 4050 6200 4050
+Wire Wire Line
+	6200 4050 6200 4250
+Connection ~ 6450 4050
+Wire Wire Line
+	6800 4150 6800 4050
+Wire Wire Line
+	6800 4050 6950 4050
+Wire Wire Line
+	6950 4050 6950 3800
+Wire Wire Line
+	6950 4050 7200 4050
+Wire Wire Line
+	7200 4050 7200 4250
+Connection ~ 6950 4050
+Wire Wire Line
+	6200 4550 6200 5300
+Wire Wire Line
+	6200 5300 5850 5300
+Wire Wire Line
+	6700 4750 6700 4850
+Wire Wire Line
+	6700 4850 5250 4850
+Wire Wire Line
+	6700 4850 7200 4850
+Wire Wire Line
+	7200 4850 7200 4550
+Connection ~ 6700 4850
+Wire Wire Line
+	6200 5300 8950 5300
+Connection ~ 6200 5300
+Connection ~ 5850 3150
+Connection ~ 5850 5300
+Wire Wire Line
+	4550 4850 4200 4850
+Wire Wire Line
+	4200 4850 4200 4000
+$Comp
+L Relay:ADW11 K?
+U 1 1 62B7147F
+P 8250 3450
+F 0 "K?" V 8817 3450 50  0000 C CNN
+F 1 "ADW11" V 8726 3450 50  0000 C CNN
+F 2 "Relay_THT:Relay_1P1T_NO_10x24x18.8mm_Panasonic_ADW11xxxxW_THT" H 9575 3400 50  0001 C CNN
+F 3 "https://www.panasonic-electric-works.com/pew/es/downloads/ds_dw_hl_en.pdf" H 8250 3450 50  0001 C CNN
+	1    8250 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 3150 7950 3150
+Wire Wire Line
+	8550 3250 8950 3250
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 62B74EC4
+P 9550 4100
+F 0 "J?" H 9522 4074 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 9522 3983 50  0000 R CNN
+F 2 "" H 9550 4100 50  0001 C CNN
+F 3 "~" H 9550 4100 50  0001 C CNN
+	1    9550 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 4100 8950 4100
+Wire Wire Line
+	8950 4100 8950 3250
+Wire Wire Line
+	8950 5300 8950 4200
+Wire Wire Line
+	8950 4200 9350 4200
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 62B7A220
+P 8200 4550
+F 0 "J?" V 8354 4362 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 8263 4362 50  0000 R CNN
+F 2 "" H 8200 4550 50  0001 C CNN
+F 3 "~" H 8200 4550 50  0001 C CNN
+	1    8200 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 3650 8650 4000
+Wire Wire Line
+	8650 4000 8300 4000
+Wire Wire Line
+	8300 4000 8300 4350
+Wire Wire Line
+	8550 3650 8650 3650
+Wire Wire Line
+	8200 4350 8200 4000
+Wire Wire Line
+	8200 4000 7850 4000
+Wire Wire Line
+	7850 4000 7850 3650
+Wire Wire Line
+	7850 3650 7950 3650
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 62B81BE7
+P 1350 4150
+F 0 "J?" H 1458 4331 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1458 4240 50  0000 C CNN
+F 2 "" H 1350 4150 50  0001 C CNN
+F 3 "~" H 1350 4150 50  0001 C CNN
+	1    1350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4150 1800 4150
+Wire Wire Line
+	1800 4150 1800 3150
+Wire Wire Line
+	1800 3150 2250 3150
+Wire Wire Line
+	1550 4250 1800 4250
+Wire Wire Line
+	1800 4250 1800 5300
+Wire Wire Line
+	1800 5300 2250 5300
+$EndSCHEMATC
